@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息登记表</title>
+</head>
+<body>
+    <form>
+        <table border="1" cellspacing="0" cellpadding="5" align="center" style="margin-top: 30px">
+            <thead align="center"><td colspan="2"><h2>个人信息登记表</h2></td></thead>
+            <tbody>
+            <tr>
+                <td align="right">姓名：</td>
+                <td><input name="name" type="text" value="苏航" readonly /></td>
+            </tr>
+            <tr>
+                <td align="right">头像：</td>
+                <td><input name="picture" type="file" /></td>
+            </tr>
+            <tr>
+                <td align="right">性别：</td>
+                <td>
+                    <input type="radio" name="sex" value="0" checked />男
+                    <input type="radio" name="sex" value="1" />女
+                </td>
+            </tr>
+            <tr>
+                <td align="right">兴趣爱好：</td>
+                <td>
+                    <input type="checkbox" name="like" value="0" checked />跑步
+                    <input type="checkbox" name="like" value="1" checked />旅行
+                    <input type="checkbox" name="like" value="2" checked />音乐
+                    <input type="checkbox" name="like" value="3" checked />电影
+                </td>
+            </tr>
+            <tr>
+                <td align="right">学历：</td>
+                <td>
+                    <select name="education" >
+                        <option value="0">高中及以下</option>
+                        <option value="1">大专</option>
+                        <option value="2" selected>本科</option>
+                        <option value="3">硕士研究生</option>
+                        <option value="4">博士研究生</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">年龄：</td>
+                <td><input name="age" type="number" min="18" max="60" value="25"></td>
+            </tr>
+            <tr>
+                <td align="right">邮箱：</td>
+                <td><input type="email" value="1311513640@qq.com"></td>
+            </tr>
+            <tr>
+                <td align="right">职业技能：</td>
+                <td><textarea name="professional skills" cols="50" rows="8"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right">工作经历：</td>
+                <td><textarea name="work experience" cols="50" rows="8"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right">学业经历：</td>
+                <td><textarea name="education experience" cols="50" rows="8"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
